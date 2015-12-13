@@ -339,7 +339,9 @@
                 }
 
                 // move vertical
-                if (!pos.dirAx) {
+                // force this check if there are connected trees
+                // so it will work also on a horizontal movement
+                if (!pos.dirAx || scope.hasConnectedTree) {
                   // check it's new position
                   targetNode = targetElm.scope();
                   isEmpty = false;

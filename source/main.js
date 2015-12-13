@@ -8,7 +8,7 @@
 
   angular.module('ui.tree', [])
     .constant('treeConfig', {
-      treeClass: 'angular-ui-tree',
+      treeClass: 'angular-ui-tree custom-angular-ui-tree',
       emptyTreeClass: 'angular-ui-tree-empty',
       hiddenClass: 'angular-ui-tree-hidden',
       nodesClass: 'angular-ui-tree-nodes',
@@ -17,7 +17,8 @@
       placeholderClass: 'angular-ui-tree-placeholder',
       dragClass: 'angular-ui-tree-drag',
       dragThreshold: 3,
-      levelThreshold: 30
+      levelThreshold: 30,
+      hasConnectedTree: false
     });
 
 })();
